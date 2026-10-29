@@ -46,12 +46,8 @@ pre { margin: 0; font: inherit; font-size: 13px; line-height: 1.35; overflow-x: 
 code { background: var(--panel); padding: 2px 6px; font: inherit; font-size: 13px; word-break: break-all; user-select: all; }
 code.snippet { display: block; padding: 8px 10px; }
 
-/* counter */
-button { background: none; color: var(--accent); border: 3px double var(--dim); font: inherit; padding: 4px 12px; cursor: pointer; }
-button:hover { color: var(--bg); background: var(--accent); }
-
 /* 88x31 buttons */
-.buttons { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 14px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 14px; }
 .buttons img { display: block; image-rendering: pixelated; }
 .buttons a:hover { background: none; }
 .buttons a:hover img { outline: 1px solid var(--accent); }
