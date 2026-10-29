@@ -1,0 +1,70 @@
+/* colors: gruvbox */
+:root {
+  --bg: #1d2021;
+  --panel: #282828;
+  --fg: #ebdbb2;
+  --dim: #928374;
+  --accent: #8ec07c;
+  --line: #3c3836;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, "DejaVu Sans Mono", monospace;
+}
+
+/* base */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 var(--mono); }
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px; }
+img { max-width: 100%; }
+a { color: var(--accent); }
+a:hover { color: var(--bg); background: var(--accent); text-decoration: none; }
+p { margin: 0 0 10px; }
+
+/* headings */
+h1 { margin: 0; font-size: 40px; line-height: 1.1; }
+h1 span { color: #fbf1c7; }
+h2 { font-size: 15px; font-weight: normal; margin: 36px 0 10px; }
+h2::before { content: "$ cat "; color: var(--dim); }
+.tag { margin: 4px 0 0; color: var(--dim); }
+.sub { margin-bottom: 24px; }
+
+/* lists */
+ul { margin: 0; padding-left: 0; list-style: none; }
+li { margin: 2px 0; }
+li::before { content: "> "; color: var(--dim); }
+.date { color: var(--dim); margin-right: 8px; }
+
+/* neofetch box */
+.box { border: 3px double var(--dim); padding: 12px 14px; }
+.neo { margin-top: 24px; }
+.neo b { color: var(--accent); font-weight: normal; }
+.c { display: inline-block; width: 1.2em; height: 1em; vertical-align: middle; }
+.c0 { background: #0c0e09; } .c1 { background: #94574a; } .c2 { background: #7d9466; } .c3 { background: #a8925a; }
+.c4 { background: #6b7a8a; } .c5 { background: #8a7590; } .c6 { background: #6d8f80; } .c7 { background: #c3c5b2; }
+pre { margin: 0; font: inherit; font-size: 13px; line-height: 1.35; overflow-x: auto; }
+
+/* code */
+code { background: var(--panel); padding: 2px 6px; font: inherit; font-size: 13px; word-break: break-all; user-select: all; }
+code.snippet { display: block; padding: 8px 10px; }
+
+/* counter */
+button { background: none; color: var(--accent); border: 3px double var(--dim); font: inherit; padding: 4px 12px; cursor: pointer; }
+button:hover { color: var(--bg); background: var(--accent); }
+
+/* 88x31 buttons */
+.buttons { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 14px; }
+.buttons img { display: block; image-rendering: pixelated; }
+.buttons a:hover { background: none; }
+.buttons a:hover img { outline: 1px solid var(--accent); }
+
+/* footer */
+hr { border: 0; border-top: 1px dashed var(--line); margin: 40px 0 16px; }
+footer { color: var(--dim); font-size: 13px; }
+
+/* phones */
+@media (max-width: 560px) {
+  body { font-size: 14px; }
+  main { padding: 24px 16px; }
+  h1 { font-size: 32px; }
+  .box { padding: 10px; }
+  .neo pre { font-size: 10px; }
+}

@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>finn</title>
 <meta name="description" content="finn's website">
-<meta name="theme-color" content="#0c0e09">
-<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#1d2021">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.svg">
 </head>
 <body>
 <main>
 
-  <h1><span>finn</span><i>_</i></h1>
+  <h1><span>finn</span></h1>
   <p class="tag">it apprentice, germany</p>
 
   <h2>about</h2>
-  <p>sysadmin apprentice from hesse, germany. i run a homelab and i'm into linux and security.</p>
+  <p>sysadmin apprentice from hesse, germany. i'm into linux and security.</p>
 
   <div class="box neo">
 <pre>
@@ -28,40 +30,28 @@
                 storage  2 tb
                 board    asus b550
 
-                <span class="c" style="background:#0c0e09"></span><span class="c" style="background:#94574a"></span><span class="c" style="background:#7d9466"></span><span class="c" style="background:#a8925a"></span><span class="c" style="background:#6b7a8a"></span><span class="c" style="background:#8a7590"></span><span class="c" style="background:#6d8f80"></span><span class="c" style="background:#c3c5b2"></span>
+                <span class="c c0"></span><span class="c c1"></span><span class="c c2"></span><span class="c c3"></span><span class="c c4"></span><span class="c c5"></span><span class="c c6"></span><span class="c c7"></span>
 </pre>
   </div>
 
   <h2>blog</h2>
   <ul>
-    <li><span class="date">2026-10-28</span><a href="blog/hello-world.html">hello world</a></li>
+    <li><a href="blog.html">all posts →</a></li>
   </ul>
 
-  <h2>incident log</h2>
-  <p class="tag">things i broke, and how i fixed them.</p>
-  <!-- newest on top, max 5 here. older ones go into "older incidents" below -->
-  <ul>
-    <li><span class="off">2026-__-__</span> [what broke] → [how you fixed it]</li>
-    <li><span class="off">2026-__-__</span> [what broke] → [how you fixed it]</li>
-  </ul>
-  <details>
-    <summary>older incidents</summary>
-    <ul>
-      <li><span class="off">2026-__-__</span> [what broke] → [how you fixed it]</li>
-    </ul>
-  </details>
+  <h2>counter</h2>
+  <p><button id="b">button</button> clicks:<span id="n">0</span></p>
 
   <h2>contact</h2>
   <ul>
-    <li>github: <a href="https://github.com/DEINNAME">DEINNAME</a></li>
-    <li>mail: <a href="mailto:hi@deinedomain.de">hi@deinedomain.de</a></li>
+    <li>github: <a href="https://github.com/Finnkltz">finnkltz</a></li>
+    <li>discord: <code>finn.0171</code></li>
   </ul>
 
   <h2>support</h2>
   <p>if you like what i do:</p>
   <ul>
-    <li><a href="https://buymeacoffee.com/DEINNAME">buy me a coffee</a></li>
-    <li>btc: <code>DEINE-BTC-ADRESSE</code></li>
+    <li>buy me a coffee: <a href="https://ko-fi.com/E7B829OWH6">ko-fi</a></li>
   </ul>
 
   <h2>buttons</h2>
@@ -69,11 +59,12 @@
     <a href="index.html"><img src="buttons/finn.gif" width="88" height="31" alt="finn"></a>
   </div>
   <p class="tag">steal my button:</p>
-  <code class="snippet">&lt;a href="https://deinedomain.de"&gt;&lt;img src="https://deinedomain.de/buttons/finn.gif" width="88" height="31" alt="finn"&gt;&lt;/a&gt;</code>
+  <code class="snippet">&lt;a href="https://finn-x64.de"&gt;&lt;img src="https://finn-x64.de/buttons/finn.gif" width="88" height="31" alt="finn"&gt;&lt;/a&gt;</code>
 
   <hr>
-  <footer>no javascript · updated 2026-10-28 · <a href="impressum.html">imprint</a></footer>
+  <footer><a href="imprint.html">imprint</a></footer>
 
 </main>
+<script src="js/counter.js"></script>
 </body>
 </html>
